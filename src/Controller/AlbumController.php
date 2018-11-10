@@ -62,6 +62,13 @@ class AlbumController extends FOSRESTController implements ClassResourceInterfac
         );
     }
 
+    public function cgetAction()
+    {
+        return $this->view(
+            $this->albumRepository->findAll()
+        );
+    }
+
     /**
      * @param $id
      * @return Album|null
