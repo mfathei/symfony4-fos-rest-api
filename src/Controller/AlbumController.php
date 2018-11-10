@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Album;
 use App\Form\AlbumType;
 use App\Repository\AlbumRepository;
+use App\Serializer\Normalizer\FormErrorNormalizer;
 use Doctrine\ORM\EntityManagerInterface;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
@@ -30,12 +31,18 @@ class AlbumController extends FOSRESTController implements ClassResourceInterfac
      * @var AlbumRepository
      */
     private $albumRepository;
+    /**
+     * @var FormErrorNormalizer
+     */
+    private $errorNormalizer;
 
     public function __construct(EntityManagerInterface $entityManager,
-                                AlbumRepository $albumRepository)
+                                AlbumRepository $albumRepository,
+                                FormErrorNormalizer $errorNormalizer)
     {
         $this->entityManager = $entityManager;
         $this->albumRepository = $albumRepository;
+        $this->errorNormalizer = $errorNormalizer;
     }
 
     public function postAction(Request $request)
@@ -45,7 +52,8 @@ class AlbumController extends FOSRESTController implements ClassResourceInterfac
         $form->submit($request->request->all());
 
         if (false === $form->isValid()) {
-            $this->view($form);
+            return $this->view($this->errorNormalizer->normalize($form)
+                , JsonResponse::HTTP_BAD_REQUEST);
         }
 
         $this->entityManager->persist($form->getData());

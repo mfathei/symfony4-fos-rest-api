@@ -18,7 +18,6 @@ class Album implements \JsonSerializable
     private $id;
 
     /**
-     * @var string|null
      * @Assert\NotBlank()
      * @ORM\Column(type="string")
      */
@@ -51,11 +50,11 @@ class Album implements \JsonSerializable
     }
 
     /**
-     * @param null|string $title
+     * @param string $title
      *
      * @return Album
      */
-    public function setTitle(?string $title): Album
+    public function setTitle($title): Album
     {
         $this->title = $title;
 
