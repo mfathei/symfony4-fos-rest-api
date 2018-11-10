@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3fc3bdf-3d39-4353-8795-d3a96a3a4fb2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/fos_rest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/fos_rest.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AlbumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AlbumController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Album.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Album.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,46 +21,46 @@
     <session id="-301249417">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="env" value="3" />
-          <entry key="gitignore" value="1" />
+          <entry key="env" value="4" />
+          <entry key="gitignore" value="2" />
           <entry key="json" value="3" />
           <entry key="md" value="2" />
-          <entry key="php" value="11" />
-          <entry key="yaml" value="20" />
+          <entry key="php" value="17" />
+          <entry key="yaml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="3" />
           <entry key="Markdown" value="2" />
-          <entry key="PHP" value="11" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="YAML" value="20" />
+          <entry key="PHP" value="17" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="YAML" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="env" value="24" />
+          <entry key="env" value="43" />
           <entry key="gitignore" value="1" />
           <entry key="md" value="568" />
-          <entry key="php" value="1228" />
-          <entry key="yaml" value="664" />
+          <entry key="php" value="1297" />
+          <entry key="yaml" value="680" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="568" />
-          <entry key="PHP" value="1228" />
-          <entry key="PLAIN_TEXT" value="25" />
-          <entry key="YAML" value="664" />
+          <entry key="PHP" value="1297" />
+          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="YAML" value="680" />
         </counts>
       </usages-collector>
     </session>
@@ -67,10 +70,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/AlbumController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="239">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
               <folding>
-                <element signature="e#34#57#0#PHP" expanded="true" />
+                <element signature="e#34#55#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,15 +96,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Controller/HealthcheckController.php" />
         <option value="$PROJECT_DIR$/config/routes/annotations.yaml" />
         <option value="$PROJECT_DIR$/config/bundles.php" />
         <option value="$PROJECT_DIR$/config/routes.yaml" />
-        <option value="$PROJECT_DIR$/config/packages/fos_rest.yaml" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/Entity/Album.php" />
         <option value="$PROJECT_DIR$/src/Form/AlbumType.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/config/packages/fos_rest.yaml" />
+        <option value="$PROJECT_DIR$/src/Entity/Album.php" />
         <option value="$PROJECT_DIR$/src/Controller/AlbumController.php" />
       </list>
     </option>
@@ -219,6 +222,17 @@
             <path>
               <item name="symfony4-fos-rest-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfony4-fos-rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-fos-rest-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-fos-rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-fos-rest-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-fos-rest-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -238,24 +252,6 @@
               <item name="symfony4-fos-rest-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony4-fos-rest-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony4-fos-rest-api" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony4-fos-rest-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony4-fos-rest-api" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="symfony" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony4-fos-rest-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony4-fos-rest-api" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="symfony" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -292,18 +288,20 @@
       <option name="presentableId" value="Default" />
       <updated>1541768076045</updated>
       <workItem from="1541768080729" duration="11510000" />
-      <workItem from="1541785355436" duration="3332000" />
+      <workItem from="1541785355436" duration="3462000" />
+      <workItem from="1541801257305" duration="1692000" />
+      <workItem from="1541844062788" duration="3094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14842000" />
+    <option name="totallyTimeSpent" value="19758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1372" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25377643" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2613293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -336,13 +334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -403,9 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="e#23#82#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -454,13 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/fos_rest.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -478,26 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/AlbumType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="e#28#49#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Album.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding>
-            <element signature="e#30#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/form/FormInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -505,12 +466,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/AlbumType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#28#49#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/fos_rest.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="112" column="30" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Album.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1255">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#30#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AlbumController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="239">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
           <folding>
-            <element signature="e#34#57#0#PHP" expanded="true" />
+            <element signature="e#34#55#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

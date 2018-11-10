@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Album;
 use App\Form\AlbumType;
 use Doctrine\ORM\EntityManagerInterface;
 use FOS\RestBundle\Controller\FOSRestController;
@@ -9,7 +10,6 @@ use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Routing\ClassResourceInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Tests\JsonResponseTest;
 
 /**
  * @Rest\RouteResource(

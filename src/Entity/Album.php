@@ -26,7 +26,7 @@ class Album
 
     /**
      * @var \DateTime|null
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="datetime")
      */
     private $releaseDate;
 

@@ -19,7 +19,7 @@ fos_rest:
   routing_loader:
 #    default_format:       null
 #    prefix_methods:       true
-    include_format:        false
+    include_format:        true
 #  body_converter:
 #    enabled:              false
 #    validate:             false
@@ -101,16 +101,16 @@ fos_rest:
 #    array_normalizer:
 #      service:              null
 #      forms:                false
-#  format_listener:
+  format_listener:
 #    enabled:              false
 #    service:              null
-#    rules:
-#
+    rules:
+
 #    # Prototype
-#    -
+    -
 #
 #      # URL path info
-#      path:                 null
+      path:                 ^/
 #
 #      # URL host name
 #      host:                 null
@@ -122,9 +122,9 @@ fos_rest:
 #        # Prototype
 #        name:                 ~
 #      stop:                 false
-#      prefer_extension:     true
-#      fallback_format:      html
-#      priorities:           []
+      prefer_extension:     true
+      fallback_format:      json
+      priorities:           [json]
 #  versioning:
 #    enabled:              false
 #    default_version:      null
