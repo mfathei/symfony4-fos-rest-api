@@ -4,12 +4,14 @@ namespace App\Controller;
 
 use App\Entity\Album;
 use App\Form\AlbumType;
+use App\Repository\AlbumRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Routing\ClassResourceInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
  * @Rest\RouteResource(
@@ -24,10 +26,16 @@ class AlbumController extends FOSRESTController implements ClassResourceInterfac
      * @var EntityManagerInterface
      */
     private $entityManager;
+    /**
+     * @var AlbumRepository
+     */
+    private $albumRepository;
 
-    public function __construct(EntityManagerInterface $entityManager)
+    public function __construct(EntityManagerInterface $entityManager,
+                                AlbumRepository $albumRepository)
     {
         $this->entityManager = $entityManager;
+        $this->albumRepository = $albumRepository;
     }
 
     public function postAction(Request $request)
@@ -47,5 +55,25 @@ class AlbumController extends FOSRESTController implements ClassResourceInterfac
 
     }
 
+    public function getAction(string $id)
+    {
+        return $this->view(
+            $this->findAlbumById($id)
+        );
+    }
 
+    /**
+     * @param $id
+     * @return Album|null
+     */
+    private function findAlbumById($id): ?Album
+    {
+        $album = $this->albumRepository->find($id);
+
+        if (null === $album) {
+            throw new NotFoundHttpException();
+        }
+
+        return $album;
+    }
 }
