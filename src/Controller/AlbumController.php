@@ -103,6 +103,16 @@ class AlbumController extends FOSRESTController implements ClassResourceInterfac
         return $this->view(null, JsonResponse::HTTP_NO_CONTENT);
     }
 
+    public function deleteAction(string $id)
+    {
+        $existingAlbum = $this->findAlbumById($id);
+
+        $this->entityManager->remove($existingAlbum);
+        $this->entityManager->flush();
+
+        return $this->view(null, JsonResponse::HTTP_NO_CONTENT);
+    }
+
     /**
      * @param $id
      * @return Album|null
