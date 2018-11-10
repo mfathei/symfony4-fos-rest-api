@@ -37,17 +37,14 @@ class AlbumController extends FOSRESTController implements ClassResourceInterfac
         $form->submit($request->request->all());
 
         if (false === $form->isValid()) {
-            $this->handleView(
-                $this->view($form)
-            );
+            $this->view($form);
         }
 
         $this->entityManager->persist($form->getData());
         $this->entityManager->flush();
 
-        return $this->handleView(
-            $this->view(['status' => 'ok'], JsonResponse::HTTP_CREATED)
-        );
+        return $this->view(['status' => 'ok'], JsonResponse::HTTP_CREATED);
+
     }
 
 

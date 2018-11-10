@@ -45,7 +45,7 @@ fos_rest:
 #    host:                 null
 #    methods:              []
 #    ips:                  []
-#  view:
+  view:
 #    default_engine:       twig
 #    force_redirects:
 #
@@ -66,9 +66,9 @@ fos_rest:
 #
 #      # Prototype
 #      name:                 ~
-#    view_response_listener:
-#      enabled:              false
-#      force:                false
+    view_response_listener:
+      enabled:              true
+      force:                true
 #      service:              null
 #    failed_validation:    400
 #    empty_content:        204
